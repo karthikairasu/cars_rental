@@ -15,7 +15,7 @@
   <link rel="manifest" href="assets/lib/manifest.json">
   <link rel="stylesheet" type="text/css" href="assets/lib/style.css">
 </head>
-<body>
+<body class="">
 <!-----------side nav start--------->  
 <div id="mySidenav" class="sidenav f-ply">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -49,7 +49,7 @@
       <footer class="text-white side-ft"> v1.1</footer>
   </div>
   <!--------Side nav close--------->
-<nav class="navbar fixed-top navbar-light bg-blue">
+<nav class="navbar fixed-top navbar-light bg-blue sd">
    <div class="col-3">
        <a class="navbar-brand" href="#" data-toggle="collapse" data-target="#collapsibleNavbar" onclick="openNav()">
        <i class="fas fa-sliders-h text-light p-1 border border-light"></i></a>
@@ -60,12 +60,33 @@
       <p class="mb-0 text-center py-1 px-2"><span></span></p>
     </div> 
 </nav>
-<br>
-<br>
-<br>
-<div class="container-fluid">
-  <h1>My First Bootstrap Page</h1>
-  <p>This is some text.</p>
+<div class="container-fluid bg-img">
+  <div class="d-flex align-items-center justify-content-center" style="height:100vh">
+     <div class="card col-lg-4 col-10 col-sm-8 f-ply bg-translit px-5">
+      <h6 class="text-center text-success mb-0"><b>
+       </b></h6>
+       <form action="usercheck.php" method="post">
+         <h4 class="text-center my-3 border-bottom pb-3">Login</h4>
+         <div class="form-group">
+          <label>Mobile No:</label>
+          <input type="mobile" class="form-control" name="mob" required>
+          </div>
+          <div class="form-group">
+          <label>Password:</label>
+          <input type="password" class="form-control" name="pass" required>
+          </div>
+          <div class="form-group text-center py-2">
+            <button class="btn btn-info w-100" type="submit">Submit</button>
+          </div>
+          <div class="form-group text-center">
+            <a href="">Forgot Password?</a>
+          </div>
+          <div class="form-group text-center">
+            <a class="text-danger" href="#"><b>Not a member? Signup</b></a>
+          </div>
+        </form>
+    </div>
+  </div>
 </div>
 
 <script>
