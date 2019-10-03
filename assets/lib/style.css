@@ -3,7 +3,7 @@ html,body{
   font-family: 'Ubuntu', sans-serif;
 }
 .bg-img{
-  background: linear-gradient(rgba(225,225,225,.45), rgba(225,225,225,.45)),url(../images/home_bg.jpg);
+  background: linear-gradient(rgba(140,140,140,.45), rgba(140,140,140,.45)),url(../images/home_bg.jpg);
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -35,8 +35,8 @@ a:hover{
 .bg-blue{
   background-color:#0975C0;
 }
-.text-burgundy{
-  color: #0B5E97;
+.text-blue{
+  color: #0975C0;
 }
 .text-grey{
   color: #c1c1c1!important;
