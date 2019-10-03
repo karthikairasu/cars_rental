@@ -12,6 +12,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Play|Titillium+Web|Changa|Lobster|Ubuntu&display=swap" rel="stylesheet">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.6/css/intlTelInput.css'>
   <link rel="manifest" href="assets/lib/manifest.json">
   <link rel="stylesheet" type="text/css" href="assets/lib/style.css">
 </head>
@@ -23,12 +24,14 @@
        <form action="" method="post">
          <h4 class="text-center mb-3 border-bottom pb-3">Login</h4>
          <div class="form-group">
-          <label>Mobile No:</label>
-          <input type="mobile" class="form-control" name="mob" required>
+            <label>Mobile No:</label>
+            <div class="input-group w-100">
+              <input id="phone" type="tel" class="form-control in_putbox">
+            </div>
           </div>
           <div class="form-group">
-          <label>Password:</label>
-          <input type="password" class="form-control" name="pass" required>
+            <label>Password:</label>
+            <input type="password" class="form-control" name="pass" required>
           </div>
           <div class="form-group text-center py-2">
             <button class="btn btn-info bg-blue w-100" type="submit">Submit</button>
@@ -51,7 +54,9 @@
           </div>
          <div class="form-group">
           <label>Mobile No:</label>
-          <input type="number" class="form-control" name="mob" required>
+          <div class="input-group w-100">
+              <input id="phone2" type="tel" class="form-control in_putbox">
+            </div>
           </div>
           <div class="form-group">
           <label>Password:</label>
@@ -85,6 +90,42 @@
 
       document.getElementById("myDIV2").style.display = "block";
     }
+</script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.6/js/intlTelInput.min.js'></script>
+<script>
+   let telInput = $("#phone")
+
+// initialize
+telInput.intlTelInput({
+    initialCountry: 'sa',
+    preferredCountries: ['us','gb','br','ru','cn','es','it'],
+    autoPlaceholder: 'aggressive',
+    utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.6/js/utils.js",
+    geoIpLookup: function(callback) {
+        fetch('https://ipinfo.io/json', {
+            cache: 'reload'
+        }).then(response => {
+            if ( response.ok ) {
+                 return response.json()
+            }
+            throw new Error('Failed: ' + response.status)
+        }).then(ipjson => {
+            callback(ipjson.country)
+        }).catch(e => {
+            callback('us')
+        })
+    }
+})
+
+let telInput2 = $("#phone2")
+
+// initialize
+telInput2.intlTelInput({
+    initialCountry: 'sa',
+    preferredCountries: ['us','gb','br','ru','cn','es','it'],
+    autoPlaceholder: 'aggressive',
+    utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.6/js/utils.js"
+})
 </script>
 </body>
 </html>
