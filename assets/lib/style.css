@@ -90,26 +90,27 @@ a:hover{
   .sidenav a {font-size: 18px;}
 }
 .side-mu .nav-item .nav-link{
-    color: black;
-    background-color: #fff;
-    border-color: #dee2e6 #dee2e6 #fff;
+  color: black;
+  background-color: #fff;
+  border-color: #dee2e6 #dee2e6 #fff;
 }
 .side-ft{
-    bottom: 0px;
-    position: absolute;
-    width:100%;
-    text-align: center;
+  bottom: 0px;
+  position: absolute;
+  width:100%;
+  text-align: center;
 }
-.sd2:hover {
+/*.sd2:hover {
     box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2), 0 0px 10px 0 rgba(0, 0, 0, 0.19);
     transition: box-shadow 0.3s ease-in-out;
     transform: scale(0.95, 0.95);
-}
+}*/
 .sd {
-    box-shadow: 1px 5px 3px 0 rgba(0, 0, 0, 0.2), 1px 5px 3px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 1px 5px 3px 0 rgba(0, 0, 0, 0.2), 1px 5px 3px 0 rgba(0, 0, 0, 0.19);
 }
 .sd2 {
-    box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2), 0 0px 10px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2), 0 0px 10px 0 rgba(0, 0, 0, 0.19);
+  border:none;
 }
 /*-------------------login page------------*/
 .input-group > .intl-tel-input.allow-dropdown {
@@ -120,7 +121,7 @@ a:hover{
 }
 
 .input-group > .intl-tel-input.allow-dropdown > .flag-container {
-    z-index: 4;
+  z-index: 4;
 }
 
 .iti-flag {
@@ -128,34 +129,34 @@ a:hover{
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-    .iti-flag {
-      background-image: url("https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.6/img/flags@2x.png");
-    }
+  .iti-flag {
+    background-image: url("https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.6/img/flags@2x.png");
+  }
 }
 .in_putbox{
-    display: block;
-    width: 100%;
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
+  display: block;
+  width: 100%;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
 }
 /*-------------home page-----------*/
 .gj-datepicker-bootstrap [role=right-icon] button {
-    width: 38px;
-    position: relative;
-    border: 2px solid #ced4da;
-    background-color: white;
+  width: 38px;
+  position: relative;
+  border: 2px solid #ced4da;
+  background-color: white;
 }
 .input-group .input-group-append .border-left-0{
-    border-left: 1px solid #ced4da!important;
+  border-left: 1px solid #ced4da!important;
 }
 .gj-timepicker-bootstrap [role=right-icon] button {
-    width: 38px;
-    position: relative;
-    background-color: white;
+  width: 38px;
+  position: relative;
+  background-color: white;
 }
 .input-group .input-group-append .btn-outline-secondary{
-     color: #6c757d;
-    border-color: #ced4da;
+  color: #6c757d;
+  border-color: #ced4da;
 }
