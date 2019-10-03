@@ -9,6 +9,10 @@ html,body{
   background-repeat: no-repeat;
   background-size: cover;
 }
+.bg-img2{
+  background: linear-gradient(rgba(224, 224, 224, 0.7), rgba(228, 228, 228, 0.7)),url(../images/bg3.png);
+  height: 100%;
+}
 a{
   text-decoration:none;
   color:black;
@@ -37,6 +41,9 @@ a:hover{
 }
 .bg-lightsky{
   background-color: #E7F1F8;
+}
+.bg-lightblue{
+  background-color:#4698E0;
 }
 .text-blue{
   color: #0975C0;
@@ -100,6 +107,9 @@ a:hover{
 }
 .sd {
     box-shadow: 1px 5px 3px 0 rgba(0, 0, 0, 0.2), 1px 5px 3px 0 rgba(0, 0, 0, 0.19);
+}
+.sd2 {
+    box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2), 0 0px 10px 0 rgba(0, 0, 0, 0.19);
 }
 /*-------------------login page------------*/
 .input-group > .intl-tel-input.allow-dropdown {
