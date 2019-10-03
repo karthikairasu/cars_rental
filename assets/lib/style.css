@@ -10,7 +10,7 @@ html,body{
   background-size: cover;
 }
 .bg-img2{
-  background: linear-gradient(rgba(224, 224, 224, 0.7), rgba(228, 228, 228, 0.7)),url(../images/bg3.png);
+  background: linear-gradient(rgba(130, 130, 130, 0.4), rgba(130, 130, 130, 0.4)),url(../images/bg3.png);
   height: 100%;
 }
 a{
