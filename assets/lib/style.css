@@ -51,6 +51,9 @@ a:hover{
 .text-grey{
   color: #c1c1c1!important;
 }
+.text-lig{
+  color: #828282;
+}
 /*-------side nav--------*/
 .sidenav {
   height: 100%;
@@ -110,6 +113,10 @@ a:hover{
 }
 .sd2 {
   box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2), 0 0px 10px 0 rgba(0, 0, 0, 0.19);
+  border:none;
+}
+.sd3 {
+  box-shadow: 0 0px 4px 1px rgba(0, 0, 0, 0.2), 0 0px 4px 1px rgba(0, 0, 0, 0.19);
   border:none;
 }
 /*-------------------login page------------*/
