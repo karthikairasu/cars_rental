@@ -12,6 +12,11 @@ html,body{
 .bg-img2{
   background: linear-gradient(rgba(130, 130, 130, 0.4), rgba(130, 130, 130, 0.4)),url(../images/bg3.png);
 }
+@media screen and (min-width: 768px) {
+  .bg-img2{
+    height: 100vh;
+   }
+}
 a{
   text-decoration:none;
   color:black;
