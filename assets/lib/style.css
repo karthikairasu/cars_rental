@@ -35,6 +35,9 @@ a:hover{
 .bg-blue{
   background-color:#0975C0;
 }
+.bg-lightsky{
+  background-color: #E7F1F8;
+}
 .text-blue{
   color: #0975C0;
 }
@@ -126,4 +129,23 @@ a:hover{
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
+}
+/*-------------home page-----------*/
+.gj-datepicker-bootstrap [role=right-icon] button {
+    width: 38px;
+    position: relative;
+    border: 2px solid #ced4da;
+    background-color: white;
+}
+.input-group .input-group-append .border-left-0{
+    border-left: 1px solid #ced4da!important;
+}
+.gj-timepicker-bootstrap [role=right-icon] button {
+    width: 38px;
+    position: relative;
+    background-color: white;
+}
+.input-group .input-group-append .btn-outline-secondary{
+     color: #6c757d;
+    border-color: #ced4da;
 }

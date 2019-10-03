@@ -14,6 +14,8 @@
   <link href="https://fonts.googleapis.com/css?family=Play|Titillium+Web|Changa|Lobster|Ubuntu&display=swap" rel="stylesheet">
   <link rel="manifest" href="assets/lib/manifest.json">
   <link rel="stylesheet" type="text/css" href="assets/lib/style.css">
+  <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+  <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
 </head>
 <body class="">
 <!-----------side nav start--------->  
@@ -62,19 +64,47 @@
 </nav>
 <div class="container-fluid bg-img">
   <div class="d-flex align-items-center justify-content-center" style="height:100vh">
-     <div class="card col-lg-4 col-11 col-sm-8 f-ply rounded-0">
+     <div class="card col-lg-5 col-12 col-sm-8 f-ply rounded-0 bg-lightsky">
        <form action="usercheck.php" method="post">
          <h4 class="text-center my-3 pb-1">Let's find your ideal Car</h4>
          <div class="form-row">
            <div class="form-group col">
-              <input type="mobile" class="form-control" name="mob" required>
+              <input type="text" class="form-control" name="country" placeholder="Country" required>
             </div>
             <div class="form-group col">
-              <input type="password" class="form-control" name="pass" required>
+              <input type="text" class="form-control" name="city" placeholder="City" required>
+            </div>
+          </div>
+          <div class="form-row">
+           <div class="form-group col">
+              <input type="text" class="form-control" name="location" placeholder="Location" required>
+            </div>
+            <div class="form-group col">
+              <select class="form-control" required>
+                <option value="">Choose a type</option>     
+                <option value="pick up">Pick Up</option>     
+                <option value="delivery">Delivery</option>     
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+           <div class="form-group col">
+              <input type="text" class="form-control" id="datepicker" name="" placeholder="Pick-up Date" required>
+            </div>
+            <div class="form-group col">
+              <input type="text" class="form-control" id="datepicker2" name="" placeholder="Drop-off Date" required>
+            </div>
+          </div>
+          <div class="form-row">
+           <div class="form-group col">
+              <input type="text" class="form-control" id="timepicker" name="" placeholder="12:00" required>
+            </div>
+            <div class="form-group col">
+              <input type="text" class="form-control" id="timepicker2" name="" placeholder="12:00" required>
             </div>
           </div>
           <div class="form-group text-center py-2">
-            <button class="btn btn-info w-100" type="submit">Submit</button>
+            <button class="btn btn-default bg-blue text-white w-100" type="submit"><b>Search</b></button>
           </div>
         </form>
     </div>
@@ -89,5 +119,21 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
 </script>
+  <script>
+      $('#datepicker').datepicker({
+          uiLibrary: 'bootstrap4'
+      });
+  </script>
+  <script>
+      $('#datepicker2').datepicker({
+          uiLibrary: 'bootstrap4'
+      });
+  </script>
+ <script>
+    $('#timepicker').timepicker({ uiLibrary: 'bootstrap4' });
+ </script>
+ <script>
+    $('#timepicker2').timepicker({ uiLibrary: 'bootstrap4' });
+ </script>
 </body>
 </html>
