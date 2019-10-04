@@ -19,35 +19,32 @@
 <body class="">
 <div class="container-fluid bg-img">
   <div class="d-flex align-items-center justify-content-center" style="height:100vh">
-     <div class="card col-lg-4 col-11 col-sm-6 f-ply bg-translit px-5" id="myDIV1">
-      <h6 class="text-center text-success mb-0"><marquee direction="right"><img src="assets/images/gif.gif" style="height:40px;width: 80px"></marquee></h6>
+     <div class="card col-lg-4 col-11 col-sm-6 f-ply bg-light" id="myDIV1">
+      <!-- <h6 class="text-center text-success mb-0"><marquee direction="right"><img src="assets/images/gif.gif" style="height:40px;width: 80px"></marquee></h6> -->
        <form action="" method="post">
-         <h4 class="text-center mb-3 border-bottom pb-3">Login</h4>
-         <div class="form-group">
+         <h4 class="text-center mb-3 mt-2 py-2 bg-white shadow-sm">Login</h4>
+         <div class="form-group px-4">
             <label>Mobile No:</label>
             <div class="input-group w-100">
-              <input id="phone" type="tel" class="form-control in_putbox">
+              <input id="phone" type="tel" class="form-control in_putbox rounded-0">
             </div>
           </div>
-          <div class="form-group">
+          <div class="form-group px-4">
             <label>Password:</label>
-            <input type="password" class="form-control" name="pass" required>
+            <input type="password" class="form-control rounded-0" name="pass" required>
           </div>
-          <div class="form-group text-center py-2">
-            <button class="btn btn-info bg-blue w-100"  onclick="window.location.href='home.html'"  type="submit">Submit</button>
+          <div class="form-group text-center py-2 px-4">
+            <button class="btn btn-info bg-blue w-100"  onclick="window.location.href='home.html'"  type="submit">Login</button>
           </div>
-          <div class="form-group text-center">
-            <a href="">Forgot Password?</a>
-          </div>
-          <div class="form-group text-center">
+          <div class="form-group text-center px-4">
             <a class="text-blue" href="#" onclick="myFun2()"><b>Not a member? Signup</b></a>
           </div>
         </form>
     </div>
-    <div class="card col-lg-4 col-10 col-sm-6 position-absolute f-ply bg-translit px-5" id="myDIV2" style="display: none;">
+    <div class="card col-lg-4 col-10 col-sm-6 f-ply bg-light px-5" id="myDIV2" style="display: none;">
       <h6 class="text-center text-success mb-0"></h6>
        <form action="saveuser.php" method="post" enctype="multipart/form-data">
-         <h4 class="text-center my-3 border-bottom pb-3">Signup</h4>
+         <h4 class="text-center my-3 pb-3">Create Your Account</h4>
          <div class="form-group">
           <label>Name:</label>
           <input type="text" class="form-control" name="name" required>
@@ -67,10 +64,10 @@
           <input type="file" class="form-control" name="imag" required>
           </div>
           <div class="form-group text-center py-2">
-            <button class="btn btn-info bg-blue w-100" onclick="window.location.href='home.html'" type="submit">Submit</button>
+            <button class="btn btn-info bg-blue w-100" onclick="window.location.href='home.html'" type="submit">Register</button>
           </div>
           <div class="form-group text-center">
-            <a class="text-blue" href="#" onclick="myFun1()"><b>Already have An Member? Login</b></a>
+            <a class="text-blue" href="#" onclick="myFun1()"><b>Already have An Account? Login</b></a>
           </div>
         </form>
     </div>
