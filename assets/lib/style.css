@@ -168,3 +168,16 @@ a:hover{
   color: #6c757d;
   border-color: #ced4da;
 }
+/*----------------booking-------------------*/
+@media screen and (max-width: 382px) {
+  .car_book img{
+    height: 58px!important;
+    width:85px!important;
+  }
+  .car_book{
+    font-size: 12px;
+  }
+  .car_book h5{
+    font-size: 12px;
+  }
+}
