@@ -14,6 +14,12 @@ html,body{
   height: 100%;
   overflow-y: auto;
 }
+.bg-img_support{
+  background: linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.7)),url('../images/support.gif');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 a{
   text-decoration:none;
   color:black;
