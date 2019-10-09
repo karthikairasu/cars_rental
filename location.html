@@ -20,7 +20,7 @@
    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAimK0TcCIaX_OagBhfALjpLJcOjQKIRwE&libraries=places"></script>
    <style>
     #myMap {
-     height: 65vh;
+     height: 80vh;
      width: 100%;
  }
 </style>
@@ -223,15 +223,15 @@ map = new google.maps.Map(document.getElementById("myMap"), mapOptions);
      </div>
  </div> -->
 </main>
-<nav class="navbar fixed-bottom navbar-light bg-info sd"> 
+<nav class="navbar fixed-bottom navbar-light bg-dark sd"> 
   <div class="col">
     <form name="location_on_map" method="post" action="">
        <input class="form-control" id="address" name="address"  type="hidden">
        <input class="form-control" type="hidden" name="lat" id="latitude" placeholder="Latitude"/>
        <input class="form-control" type="hidden" name="lng" id="longitude" placeholder="Longitude"/>
        
-       <div class="form-group mb-0">
-          <input class="btn btn-block" type="submit" name="add_address" value="CONFIRM LOCATION" style="background-color: #2875c0; color: #fff;">
+       <div class="form-group mb-0 text-center">
+          <input class="btn btn-default w-75" type="submit" name="add_address" value="CONFIRM LOCATION" style="background-color: #2875c0; color: #fff;">
        </div>
    </form>   
   </div> 
