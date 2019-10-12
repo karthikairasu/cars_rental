@@ -188,7 +188,7 @@ a:hover{
   }
 }
 /*--------------------my trip ---------------*/
-.table td, .table th {
+.mytrip_tbl td, .mytrip_tbl th {
     padding: 0px;
     vertical-align: top;
     border-top: none;
